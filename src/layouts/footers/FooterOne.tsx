@@ -5,6 +5,8 @@ import BehanceIconFooter from '@/svg/home/FooterIcons/BehanceIconFooter';
 import GoogleIconFooter from '@/svg/home/FooterIcons/GoogleIconFooter';
 import InstagramIconFooter from '@/svg/home/FooterIcons/InstagramIconFooter';
 import Link from 'next/link';
+import Linkedin from "@/svg/icons/Linkedin";
+import Github from "@/svg/icons/Github";
 
 
 interface DataType {
@@ -17,6 +19,7 @@ interface DataType {
     name: string;
     user_name: string;
     icon: React.JSX.Element;
+    link: string;
   }[];
 }
 
@@ -28,22 +31,25 @@ const footer_content: DataType = {
   footer_data: [
     {
       id: 1,
-      name: "Behance",
-      user_name: "@diego_des",
-      icon: <BehanceIconFooter />,
+      name: "Linkedin",
+      user_name: "@shady_elsayed",
+      icon: <Linkedin width={'20'} height={'20'}/>,
+      link: "https://www.linkedin.com/in/shady-elsayed-software-developer/"
     },
     {
       id: 2,
-      name: "Google",
-      user_name: "@diego_des",
-      icon: <GoogleIconFooter />,
+      name: "Github",
+      user_name: "@shadyshanab",
+      icon: <Github fill={"#000"}/>,
+        link: "https://github.com/shadyshanab",
     },
-    {
-      id: 3,
-      name: "Instagram",
-      user_name: "@diego_des",
-      icon: <InstagramIconFooter />,
-    },
+      {
+          id: 3,
+          name: "Google",
+          user_name: "shadyshanab.apps@gmail.com",
+          icon: <GoogleIconFooter />,
+            link: "mailto:shadyshanab.apps@gmail.com",
+      },
   ]
 }
 
@@ -97,7 +103,7 @@ const FooterOne = ({ style }: any) => {
                     </div>
                     <div className="col-xl-6 col-lg-6 col-md-6">
                       <div className="tp-footer-btn text-center">
-                        <a className="tp-btn-grey-xl w-100" target="_blank" href="mailto:WriteaMessage">
+                        <a className="tp-btn-grey-xl w-100" target="_blank" href="mailto:shadyshanab.apps@gmail.com">
                           <div>
                             <span>Write a Message</span>
                           </div>
@@ -111,7 +117,7 @@ const FooterOne = ({ style }: any) => {
                   <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-6">
                       <div className="tp-footer-btn text-center ">
-                        <a className="tp-btn-green w-100" href="mailto:WriteaMessage">
+                        <a className="tp-btn-green w-100" href="mailto:shadyshanab.apps@gmail.com">
                           <div>
                             <span>{btn_text_1}</span>
                           </div>
@@ -134,7 +140,7 @@ const FooterOne = ({ style }: any) => {
               <div className="row gx-50">
                 {footer_data.map((item, index) => (
                   <div key={index} className="col-xl-4 col-lg-4 col-md-6" style={{ marginBottom: "30px" }}>
-                    <a href="#">
+                    <a href={item.link} target="_blank" rel="noopener noreferrer">
                       <div className="tp-footer-social-item d-flex align-items-center justify-content-between">
                         <span className="tp-footer-anim-border"></span>
                         <div className="tp-footer-social-text z-index-1">
@@ -150,23 +156,6 @@ const FooterOne = ({ style }: any) => {
                     </a>
                   </div>
                 ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="tp-copyright-area pb-20">
-            <div className="container">
-              <div className="row">
-                <div className="col-xl-6 col-md-6">
-                  <div className="tp-copyright-content-left text-center text-md-start">
-                    <p><CopyRight /></p>
-                  </div>
-                </div>
-                <div className="col-xl-6 col-md-6">
-                  <div className="tp-copyright-content-right text-center text-md-end">
-                    <span>{new Date().getFullYear()} Portfolio</span>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

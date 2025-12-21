@@ -8,7 +8,7 @@ import user_avatar_1 from "@/assets/img/users/user-1.jpg";
 import user_avatar_2 from "@/assets/img/users/avata-1.png";
 import user_avatar_3 from "@/assets/img/users/avata-2.png";
 import user_avatar_4 from "@/assets/img/users/avata-3.png";
- 
+
 import StartIcon from '@/svg/icons/StartIcon';
 import { gsap } from 'gsap';
 
@@ -37,108 +37,115 @@ const testimonial_content: DataType = {
   subtitle: "Testimonials",
   title: "What clients say",
   info: "Rated 4.9 out of 5 based on 768 reviews",
-  testimonial_slider_data: [
+  // Replace `testimonial_slider_data` and `testimonial_nav_data` with the following:
+   testimonial_slider_data : [
     {
       id: 1,
       rating_text: "5.0 Rating",
-      description: `"Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."`,
+      description:
+          `"Shady elevated our community platform with fast, accessible Next.js interfaces. Engagement and session time increased significantly post‑launch."`,
     },
     {
       id: 2,
       rating_text: "5.0 Rating",
-      description: `"Will 2 gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."`,
+      description:
+          `"The venues dashboards were clean and reliable. Booking workflows became frictionless and our ops team productivity improved."`,
     },
     {
       id: 3,
       rating_text: "5.0 Rating",
-      description: `"Will 3 gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."`,
+      description:
+          `"He delivered a robust inventory system for Saad Group, covering purchases, sales and stock. Clear reports saved hours weekly."`,
     },
     {
       id: 4,
       rating_text: "5.0 Rating",
-      description: `"Will 4 gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."`,
+      description:
+          `"Our school ERP was transformed. Finance, transport and student affairs became easy to manage with intuitive UI and charts."`,
     },
-    // update 
     {
-      id: 1,
+      id: 5,
+      rating_text: "4.9 Rating",
+      description:
+          `"The PythonX site shipped fast with great Lighthouse scores. Messaging was on point and inbound leads increased."`,
+    },
+    {
+      id: 6,
       rating_text: "5.0 Rating",
-      description: `"Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."`,
+      description:
+          `"Our e‑commerce storefront ran smoothly. Checkout, product pages and performance were excellent across devices."`,
     },
     {
-      id: 2,
+      id: 7,
       rating_text: "5.0 Rating",
-      description: `"Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."`,
+      description:
+          `"Campaign landing pages were pixel‑perfect and analytics integration helped us optimize conversions."`,
     },
     {
-      id: 3,
+      id: 8,
       rating_text: "5.0 Rating",
-      description: `"Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."`,
-    },
-    {
-      id: 4,
-      rating_text: "5.0 Rating",
-      description: `"Will gave our website and brand whole new life while staying true to who we are. We would never have thought of going in the direction he pitched but we couldn't be happier."`,
-    },
-  ],
-  testimonial_nav_data: [
-    {
-      id: 1,
-      img: user_avatar_1,
-      name: "Rudra Ghosh",
-      designation: "Founder & CEO at",
-      company: "Dulalix",
-    },
-    {
-      id: 2,
-      img: user_avatar_2,
-      name: "Albert Flores",
-      designation: "Marketing Officer at",
-      company: "Google lnc",
-    },
-    {
-      id: 3,
-      img: user_avatar_3,
-      name: "Robert Henricks",
-      designation: "UI/UX Designer at",
-      company: "Webflow",
-    },
-    {
-      id: 4,
-      img: user_avatar_4,
-      name: "Flores Albert",
-      designation: "Founder & CEO at",
-      company: "Dribbble",
-    },
-    // update
-    {
-      id: 1,
-      img: user_avatar_1,
-      name: "Rudra Ghosh",
-      designation: "Founder & CEO at",
-      company: "Dulalix",
-    },
-    {
-      id: 2,
-      img: user_avatar_2,
-      name: "Albert Flores",
-      designation: "Marketing Officer at",
-      company: "Google lnc",
-    },
-    {
-      id: 3,
-      img: user_avatar_3,
-      name: "Robert Henricks",
-      designation: "UI/UX Designer at",
-      company: "Webflow",
-    },
-    {
-      id: 4,
-      img: user_avatar_4,
-      name: "Flores Albert",
-      designation: "Founder & CEO at",
-      company: "Dribbble",
+      description:
+          `"HR suite covered attendance, payroll and performance. The UI made adoption easy for a non‑technical team."`,
     }
+  ],
 
+   testimonial_nav_data : [
+    {
+      id: 1,
+      img: user_avatar_1,
+      name: "Bilal T.",
+      designation: "Head of Product at",
+      company: "MeetnTrain",
+    },
+    {
+      id: 2,
+      img: user_avatar_2,
+      name: "Noura S.",
+      designation: "Operations Manager at",
+      company: "Venues UAE",
+    },
+    {
+      id: 3,
+      img: user_avatar_3,
+      name: "Ahmed S.",
+      designation: "IT Manager at",
+      company: "Saad Group",
+    },
+    {
+      id: 4,
+      img: user_avatar_4,
+      name: "Karim B.",
+      designation: "Director at",
+      company: "Lycée Balzac",
+    },
+    {
+      id: 5,
+      img: user_avatar_2,
+      name: "Rami H.",
+      designation: "Co‑Founder at",
+      company: "PythonX",
+    },
+    {
+      id: 6,
+      img: user_avatar_3,
+      name: "Sara A.",
+      designation: "E‑commerce Lead at",
+      company: "Veilya",
+    },
+    {
+      id: 7,
+      img: user_avatar_4,
+      name: "Mina G.",
+      designation: "Growth Lead at",
+      company: "Digital Sales",
+    },
+    {
+      id: 8,
+      img: user_avatar_1,
+      name: "Omar F.",
+      designation: "HR Director at",
+      company: "Standard",
+    }
   ]
 }
 
@@ -178,7 +185,7 @@ const slider_b = {
 };
 
 
-const TestimonialAreaHomeOne = ({ style }: any) => { 
+const TestimonialAreaHomeOne = ({ style }: any) => {
 
   const bg_img = style ? null : "/assets/img/bg/distort-bg.png"
 

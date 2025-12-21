@@ -1,19 +1,31 @@
 
 import React from 'react';
-import HeaderNine from '@/layouts/headers/HeaderNine';
 import PortfolioDetailsThreeArea from './PortfolioDetailsThreeArea';
-import FooterFive from '@/layouts/footers/FooterFive';
+import FooterOne from "@/layouts/footers/FooterOne";
 
-const PortfolioDetailsThree = () => {
+interface ProjectData {
+    title: string;
+    technology: string;
+    date: string;
+    client: string;
+    services: string[];
+    description: string;
+    images: string[];
+    liveLink: string;
+}
+
+interface Props {
+    project: ProjectData;
+}
+const PortfolioDetailsThree = ({ project }: Props) => {
   return (
     <>
-      <HeaderNine />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <PortfolioDetailsThreeArea />
+            <PortfolioDetailsThreeArea project={project} />
           </main>
-          <FooterFive />
+          <FooterOne />
         </div>
       </div>
     </>

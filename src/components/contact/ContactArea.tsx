@@ -25,7 +25,7 @@ const contact_content: DataType = {
   subtitle: "Contact Us",
   title_1: "Let’s Talk",
   title_2: "About your Project",
-  email: "hello@diego.com",
+  email: "shadyshanab.apps@gmail.com",
   mail_text: <>Interested in working with me? Submit your <br /> project inquiry using the form below.</>,
   categorys: [
     { id: "branding", title: "Branding" },
@@ -66,7 +66,7 @@ const ContactArea = () => {
 
   return (
     <>
-      <div className="contact-inner__area contact-inner__ptb p-relative black-bg-3">
+      <div className="contact-inner__area contact-inner__ptb p-relative theme-bg-2">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-11 offset-xl-1">

@@ -23,13 +23,12 @@ interface DataType {
 
 const hero_content: DataType = {
   slide_text: [
-    "Visual designer",
-    "Visual designer",
+    "Shady Shanab • Web Developer • UX Designer • App Developer •",
   ],
   sub_title: "Hello There!",
-  title_1: "I am diego",
+  title_1: "I am Shady Shanab a",
   words: ["Web", "App", "UX"],
-  title_2: "designer",
+  title_2: "Developer",
   sm_info: <>The combination of my passion for design, code & <br /> interaction web design world.</>,
   btn_text: <>Get <br /> In Touch</>,
 

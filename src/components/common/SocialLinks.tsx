@@ -2,6 +2,8 @@ import Link from "next/link";
 import HeroBehanceIcon from "@/svg/home/HeroIcons/HeroBehanceIcon";
 import HeroEmailIcon from "@/svg/home/HeroIcons/HeroEmailIcon";
 import HeroGoogleIcon from "@/svg/home/HeroIcons/HeroGoogleIcon";
+import Linkedin from "@/svg/icons/Linkedin";
+import Github from "@/svg/icons/Github";
 
 // hero 01 social links
 interface HeroDataType {
@@ -13,8 +15,8 @@ interface HeroDataType {
 const hero_social_data: HeroDataType[] = [
   {
     id: 1,
-    link: "https://mail.google.com",
-    icon: <HeroEmailIcon />,
+    link: "https://www.linkedin.com/in/shady-elsayed-software-developer/",
+    icon: <Linkedin />,
   },
   {
     id: 2,
@@ -23,8 +25,8 @@ const hero_social_data: HeroDataType[] = [
   },
   {
     id: 3,
-    link: "https://www.behance.net",
-    icon: <HeroBehanceIcon />,
+    link: "https://github.com/shadyshanab",
+    icon: <Github />,
   }
 ]
 
@@ -90,7 +92,7 @@ export const HeroSocialLinksHomeThree = () => {
 }
 
 
-// copy right text 
+// copy right text
 type copy_right_text_type = {
   copy_right?: JSX.Element;
   copy_rigth_2?: string;

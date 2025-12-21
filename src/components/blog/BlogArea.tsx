@@ -9,9 +9,9 @@ import Link from 'next/link';
 
 // data
 const categories = blog_data.map((item) => item.category);
-const total_items = blog_data.map(p => p.article_data.length) 
+const total_items = blog_data.map(p => p.article_data.length)
 
-// slider swiper setting 
+// slider swiper setting
 const slider_setting = {
   speed: 800,
   slidesPerView: 1,
@@ -44,10 +44,10 @@ const slider_setting = {
 }
 
 const BlogArea = () => {
-  const [items, setItems] = useState([...blog_data]); 
+  const [items, setItems] = useState([...blog_data]);
 
 
-  const filterItems = (cateItem: string) => { 
+  const filterItems = (cateItem: string) => {
     const findItems = blog_data.filter((findItem) => findItem.category === cateItem);
     setItems(findItems);
   };
@@ -56,7 +56,7 @@ const BlogArea = () => {
   return (
     <>
 
-      <div className="blog-list__area blog-list__ptb fix black-bg-3">
+      <div className="blog-list__area blog-list__ptb fix theme-bg-2">
         <div className="container">
           <div className="row">
             <div className="blog-list__title-box">
@@ -103,7 +103,7 @@ const BlogArea = () => {
                                     <div className="col-xl-8">
                                       <div className="blog-list__slider-title-box">
                                         <h4 className="blog-list__slider-title">
-                                          <Link href="blog-details-2" dangerouslySetInnerHTML={{ __html: slider.title }}>
+                                          <Link href="/blog-details" dangerouslySetInnerHTML={{ __html: slider.title }}>
                                           </Link>
                                         </h4>
                                       </div>
@@ -160,7 +160,7 @@ const BlogArea = () => {
                               <div key={index} className="col-xl-6 col-lg-6 col-md-6">
                                 <div className="blog-list__sm-item mb-60 pb-30">
                                   <div className="blog-list__sm-thumb">
-                                    <Link href="/blog-details-2">
+                                    <Link href="/blog-details">
                                       <Image src={article.img} style={{height: 'auto'}} alt="image-here" />
                                     </Link>
                                   </div>
@@ -170,7 +170,7 @@ const BlogArea = () => {
                                   </div>
                                   <div className="blog-list__sm-title-box">
                                     <h4 className="blog-list__sm-title">
-                                      <Link href="/blog-details-2">
+                                      <Link href="/blog-details">
                                         {article.title}
                                       </Link>
                                     </h4>

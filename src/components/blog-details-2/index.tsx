@@ -1,10 +1,10 @@
 
 'use client'
 import React from 'react';
-import FooterFour from '@/layouts/footers/FooterFour';
-import HeaderFour from '@/layouts/headers/HeaderFour';
 import BreadcrumbBlogDetailsTwo from './BreadcrumbBlogDetailsTwo';
 import PostboxBlogDetailsTwoArea from './PostboxBlogDetailsTwoArea';
+import HeaderOne from "@/layouts/headers/HeaderOne";
+import FooterOne from "@/layouts/footers/FooterOne";
 
 
 
@@ -13,14 +13,14 @@ const BlogDetailsTwo = () => {
 
   return (
     <>
-      <HeaderFour style={true} />
+        <HeaderOne />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
             <BreadcrumbBlogDetailsTwo />
             <PostboxBlogDetailsTwoArea />
           </main>
-          <FooterFour />
+            <FooterOne />
         </div>
       </div>
     </>

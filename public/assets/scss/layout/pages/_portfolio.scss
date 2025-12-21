@@ -63,7 +63,141 @@
             @media #{$md,$xs}{
                 padding-left: 0;
             }
+
+
+          .mask-mob-web-feature {
+            position: relative;
+            display: inline-block;
+            width: 300px;
+            height: auto;
+
+            & > img:first-child { // The mockup SVG
+              width: 100%;
+              height: auto;
+              display: block;
+            }
+          }
+
+          .mask-mob-web-feature-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            mask-image: url('../../../img/portfolio/iphone-mockup.svg');
+            -webkit-mask-image: url('../../../img/portfolio/iphone-mockup.svg');
+            mask-repeat: no-repeat;
+            -webkit-mask-repeat: no-repeat;
+            mask-position: center center;
+            -webkit-mask-position: center center;
+            mask-size: contain;
+            -webkit-mask-size: contain;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4.5% 2%; // Adjust to fit inside bezel
+
+            & img {
+              width: 100% !important;
+              height: 100% !important;
+              object-fit: cover !important;
+              border-radius: 30px;
+            }
+
+            @media (max-width: 700px) {
+              & img {
+                border-radius: 20px;
+              }
+            }
+          }
+
+
+          .card-image-1 {
+            position: relative;
+            overflow: hidden;
+            margin: 10px;
+            transition: .5s;
+            outline: none;
+            .d-text {
+              color: #ffffff;
+              position: absolute;
+              z-index: 1;
+              width: 100%;
+              height: 100%;
+              padding: 10%;
+              transform: scale(1.1);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0 10%;
+              background: rgba(30, 30, 30, 0);
+              background-size: auto;
+              transition: .5s;
+            }
+            h3 {
+              opacity: 0;
+              margin: 0;
+              font-size: 22px;
+              transition: .5s;
+            }
+            h4{
+              opacity: 0;
+              margin: 0;
+              font-size: 16px;
+              transition: .5s;
+              color: #ffffff;
+            }
+            h5 {
+              opacity: 0;
+              font-weight: 300;
+              font-size: 14px;
+              color: #ffffff;
+              position: absolute;
+              left: 0;
+              bottom: 5%;
+              width: 100%;
+              text-align: center;
+              transition: .5s;
+            }
+            img {
+              transform: scale(1.1);
+              //filter: grayscale(100%);
+              transition: .5s;
+            }
+            &:hover {
+              z-index: 1;
+              -webkit-box-shadow: 8px 8px 40px 0px rgba(0, 0, 0, .5);
+              -moz-box-shadow: 8px 8px 40px 0px rgba(0, 0, 0, .5);
+              box-shadow: 8px 8px 40px 0px rgba(0, 0, 0, .5);
+              transition: .5s;
+              .d-text {
+                transform: scale(1);
+                background: rgba(30, 30, 30 , .3);
+                background-size: auto;
+              }
+              h3 {
+                opacity: 1;
+                transition: .5s;
+              }
+              h4{
+                opacity: 1;
+                transition: .5s;
+              }
+              h5 {
+                opacity: 1;
+                bottom: 5%;
+                transition: .5s;
+              }
+              img {
+                transform: scale(1);
+                filter: grayscale(0);
+                transition: .5s;
+              }
+            }
+          }
+
         }
+
     }
     &-title{
         @extend %ff-dmsans;
@@ -97,8 +231,8 @@
                 background: rgba($color: #FFFFFF, $alpha: .7);
                 height: 1px;
                 width: 20px;
-                left: 0;  
-                @extend %transition;             
+                left: 0;
+                @extend %transition;
             }
             & svg{
                 position: absolute;
@@ -133,61 +267,69 @@
             }
         }
     }
-    &-thumb{
-        margin-bottom: 20px;
-        border-radius: 12px;
-        overflow: hidden;
-        position: relative;
-        height: 560px;
-        @media #{$xs}{
-            height: 460px;
-        }
-        &.img{
-            &-1{
-                height: 560px;
-                overflow: hidden;
-                @media #{$xs}{
-                    height: 460px;
-                }
-            }
-            &-2{
-                height: 520px;
-                overflow: hidden;
-                @media #{$xs}{
-                    height: 460px;
-                }
-            }
-            &-3{
-                height: 500px;
-                overflow: hidden;
-                @media #{$xs}{
-                    height: 460px;
-                }
-            }
-            &-4{
-                height: 420px;
-                overflow: hidden;
-                @media #{$xs}{
-                    height: 400px;
-                }
-            }
-        }
-        @include transition-mul((all .6s ease-out));
-        & a{
-            display: block;
-        }
-        &-img{
-            @extend %bg-thumb;
-            @include transition-mul((all .6s ease-out));
-            border-radius: 12px;
-            display: inline-block;
-            & img{
-                border-radius: 12px;
-            }
-        }
-        
+  &-thumb{
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    height: auto; // Changed from fixed 560px
+
+    @media #{$xs}{
+      height: auto; // Changed from fixed 460px
     }
-    &-more{
+    &.img{
+      position: relative;
+      &-1{
+        height: auto; // Remove fixed height
+        overflow: hidden;
+        @media #{$xs}{
+          height: auto;
+        }
+      }
+      &-2{
+        height: auto; // Remove fixed height
+        overflow: hidden;
+        @media #{$xs}{
+          height: auto;
+        }
+      }
+      &-3{
+        height: auto; // Changed from 500px
+        overflow: hidden;
+        @media #{$xs}{
+          height: auto;
+        }
+      }
+      &-4{
+        height: auto; // Changed from 420px
+        overflow: hidden;
+        @media #{$xs}{
+          height: auto;
+        }
+      }
+    }
+    @include transition-mul((all .6s ease-out));
+    & a{
+      display: block;
+    }
+    &-img{
+      @extend %bg-thumb;
+      @include transition-mul((all .6s ease-out));
+      border-radius: 12px;
+      display: block; // Changed from inline-block
+      width: 100%; // Add this
+      height: auto; // Add this
+      position: relative;
+      & img{
+        border-radius: 12px;
+        width: 100%; // Ensure image takes full width
+        height: auto; // Maintain aspect ratio
+        display: block; // Remove extra space below image
+      }
+    }
+  }
+
+  &-more{
         margin-left: 270px;
         @media #{$md}{
             margin-left: 0;
@@ -264,7 +406,7 @@
             }
         }
 
-        
+
 
         @at-root{
             .tp-hover-reveal-text.active{
@@ -364,6 +506,9 @@
             }
         }
     }
+
+
+
 }
 .tp-portfolio{
     &-item{
@@ -413,7 +558,7 @@
     &__slider-title{
         font-weight: 500;
         font-size: 100px;
-        line-height: 1; 
+        line-height: 1;
         text-align: center;
         letter-spacing: -0.03em;
         color: var(--tp-common-white);
@@ -628,7 +773,7 @@
             & p{
                 font-weight: 300;
                 font-size: 30px;
-                line-height: 40px;               
+                line-height: 40px;
                 color: var(--tp-common-white);
                 font-family: var(--tp-ff-didoneright);
                 margin-bottom: 40px;

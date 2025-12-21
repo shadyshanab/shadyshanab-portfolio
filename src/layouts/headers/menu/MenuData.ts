@@ -5,7 +5,7 @@ import demo_img_2 from "@/assets/img/menu/home-2.jpg";
 import demo_img_3 from "@/assets/img/menu/home-3.jpg";
 import demo_img_4 from "@/assets/img/menu/home-4.jpg";
 import demo_img_5 from "@/assets/img/menu/home-5.jpg";
-import demo_img_6 from "@/assets/img/menu/home-8.jpg"; 
+import demo_img_6 from "@/assets/img/menu/home-8.jpg";
 import demo_img_7 from "@/assets/img/menu/home-7.jpg";
 import demo_img_8 from "@/assets/img/menu/home-6.jpg";
 
@@ -25,7 +25,7 @@ interface DataType {
     mobile_menu?: boolean;
   }[];
 }[]
-// menu data 
+// menu data
 const menu_data: DataType[] = [
   {
     id: 1,
@@ -40,12 +40,12 @@ const menu_data: DataType[] = [
       { mobile_menu: false, link: "/home-5", title: "Home 05", demo_img: demo_img_5, },
       { mobile_menu: false, link: "/home-6", title: "Home 06", demo_img: demo_img_6, },
       { mobile_menu: false, link: "/home-7", title: "Home 07", demo_img: demo_img_7, },
-      { mobile_menu: false, link: "/home-8", title: "Home 08", demo_img: demo_img_8, }, 
+      { mobile_menu: false, link: "/home-8", title: "Home 08", demo_img: demo_img_8, },
 
       { mobile_menu: true, link: "/", title: "Freelancer"},
       { mobile_menu: true, link: "/home-2", title: "Interface Designer"},
       { mobile_menu: true, link: "/home-3", title: "Web Developer"},
-      
+
       { mobile_menu: true, link: "/home-4", title: "Photographer"},
       { mobile_menu: true, link: "/home-5", title: "Fashion Designer"},
       { mobile_menu: true, link: "/home-6", title: "Portfolio Slider 01"},
@@ -91,7 +91,7 @@ const menu_data: DataType[] = [
       { link: "/blog", title: "Blog List" },
       { link: "/blog-sidebar", title: "Blog Sidebar" },
       { link: "/blog-details", title: "Blog Details" },
-      { link: "/blog-details-2", title: "Blog Details 02" },
+      { link: "/blog-details", title: "Blog Details 02" },
     ],
   },
   {

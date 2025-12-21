@@ -9,8 +9,8 @@
         padding-left: 65px;
         padding-right: 65px;
         position: relative;
-        
-        &-border{   
+
+        &-border{
             position: absolute;
             bottom: 0;
             left: 0;
@@ -32,7 +32,9 @@
         }
     }
     &-thumb{
-        display: inline-block;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
         @include rounded(320px, 320px);
         overflow: hidden;
         @media #{$md,$xs}{
@@ -139,11 +141,11 @@
             font-family: var(--tp-ff-didoneright);
             padding-right: 130px;
             @media #{$lg}{
-                font-size: 36px;  
+                font-size: 36px;
                 padding-right: 0;
             }
             @media #{$md}{
-                font-size: 28px;  
+                font-size: 28px;
                 padding-right: 0;
                 line-height: 50px;
             }
@@ -260,7 +262,7 @@
         font-size: 34px;
         line-height: 30px;
         color: var(--tp-common-white);
-        font-family: var(--tp-ff-didoneright); 
+        font-family: var(--tp-ff-didoneright);
         margin-bottom: 35px;
         & svg{
             transform: translateY(-5px);
@@ -284,10 +286,12 @@
         &-length{
             font-weight: 400;
             font-size: 14px;
+            max-width: 100px;
             line-height: 15px;
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.5);
-            margin-right: 95px;
+            margin-right: 40px !important;
+            width: 100%;
             @media #{$xs}{
                 margin-right: 50px;
                 margin-bottom: 15px;

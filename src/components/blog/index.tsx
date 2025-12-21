@@ -1,20 +1,20 @@
 'use client';
 import BlogArea from './BlogArea';
-import React, { useEffect } from 'react';
-import HeaderFour from '@/layouts/headers/HeaderFour';
-import FooterFour from '@/layouts/footers/FooterFour';
+import React from 'react';
+import HeaderOne from "@/layouts/headers/HeaderOne";
+import FooterOne from "@/layouts/footers/FooterOne";
 
 
 const Blog = () => {
   return (
     <>
-      <HeaderFour />
+        <HeaderOne />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
             <BlogArea />
           </main>
-          <FooterFour />
+            <FooterOne />
         </div>
       </div>
 

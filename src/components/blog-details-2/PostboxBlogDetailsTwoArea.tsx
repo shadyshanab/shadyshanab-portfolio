@@ -14,7 +14,7 @@ import thumb_1 from "@/assets/img/blog/blog-details-4-1.jpg";
 import thumb_2 from "@/assets/img/blog/blog-details-4-2.jpg";
 import  related_post from "@/assets/img/blog/related-post.jpg"
 
-// data type 
+// data type
 interface DataType {
   social_links: {
     id: number;
@@ -28,9 +28,9 @@ interface DataType {
   description_4: string;
   description_5: string;
   description_6: string;
-  description_7: string;  
+  description_7: string;
   qoute: string;
-  tags: { 
+  tags: {
     title: string;
     link: string
   }[];
@@ -130,7 +130,7 @@ const {
 const PostboxBlogDetailsTwoArea = () => {
   return (
     <>
-      <section className="postbox-details__area pt-100 pb-100 black-bg-3">
+      <section className="postbox-details__area pt-100 pb-100 theme-bg-2">
         <div className="container">
           <div className="row">
             <div className="col-xxl-2 col-xl-2 col-lg-2">
@@ -249,10 +249,10 @@ const PostboxBlogDetailsTwoArea = () => {
                         </div>
                       </li>
                     )}
-                  </ul> 
+                  </ul>
                 </div>
-                <CommentForm /> 
-                
+                <CommentForm />
+
               </div>
             </div>
 

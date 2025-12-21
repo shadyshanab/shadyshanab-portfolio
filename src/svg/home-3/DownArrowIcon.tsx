@@ -11,14 +11,14 @@ const DownArrowIcon = () => {
     >
       <path
         d="M1 1L10 10"
-        stroke="white"
+        stroke="black"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M10 1V10H1"
-        stroke="white"
+        stroke="black"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"

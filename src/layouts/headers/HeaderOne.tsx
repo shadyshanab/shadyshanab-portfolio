@@ -1,15 +1,12 @@
 'use client';
 import { gsap } from 'gsap';
 import Link from 'next/link';
-import Image from 'next/image';
-import NavMenu from './menu/NavMenu';
 import React, { useEffect, useState } from 'react';
 import Offcanvas2 from '@/components/common/Offcanvas2';
-
-import light_logo from "@/assets/img/logo/logo.png";
-import dark_logo from "@/assets/img/logo/logo-black.png";
 import UseThemeCheck from '@/hooks/UseThemeCheck';
-
+import light_logo from "@/assets/img/logo/whitelogo.png";
+import dark_logo from "@/assets/img/logo/darklogo.png";
+import Image from 'next/image';
 
 const HeaderOne = () => {
   const [showCanvas, setShowCanvas] = useState<boolean>(false);
@@ -35,7 +32,7 @@ const HeaderOne = () => {
   }, [])
 
 
-  // sticky header 
+  // sticky header
   const [lastScrollTop, setLastScrollTop] = useState(0);
   useEffect(() => {
     const handleScroll = () => {
@@ -63,26 +60,92 @@ const HeaderOne = () => {
     <>
       <header>
 
-        <div className="tp-header-area tp-header-mob-space tp-header-transparent p-relative">
+        <div className="tp-header-area tp-header-mob-space tp-header-transparent p-relative py-2">
           <span className="tp-header-border"></span>
           <div className="container container-large">
             <div className="row align-items-center">
               <div className="col-xl-2 col-lg-2 col-md-5 col-6">
                 <div className="logo">
                   <Link className="logo-white" href="/">
-                    <Image style={{ width: '115px', height: 'auto' }} src={light_logo} alt="diego-image" />
+                    <Image style={{ width: '70px', height: 'auto' }} src={dark_logo} alt="logo" />
                   </Link>
                   <Link className="logo-black" href="/">
-                    <Image style={{ width: '115px', height: 'auto' }} src={dark_logo} alt="diego-image" />
+                    <Image style={{ width: '70px', height: 'auto' }} src={light_logo} alt="logo" />
                   </Link>
+
+    {/*              /!* Light theme logo *!/*/}
+    {/*              <Link className="logo-white" href="/">*/}
+    {/*                <h5 className="id-color" style={{*/}
+    {/*                  fontWeight: 700,*/}
+    {/*                  fontSize: '18px',*/}
+    {/*                  lineHeight: '1',*/}
+    {/*                  textAlign: 'left',*/}
+    {/*                  textTransform: 'none',*/}
+    {/*                  border: 'none',*/}
+    {/*                  padding: '0',*/}
+    {/*                  margin: '0',*/}
+    {/*                  letterSpacing: '0.5px',*/}
+    {/*                  color: '#fff',*/}
+    {/*                  backgroundColor: 'transparent',*/}
+    {/*                  whiteSpace: 'nowrap',*/}
+    {/*                  display: 'inline-flex',*/}
+    {/*                  alignItems: 'center',*/}
+    {/*                  gap: '8px',*/}
+    {/*                }}>*/}
+    {/*<span style={{*/}
+    {/*  background: 'linear-gradient(135deg, #fff 0%, #f0f0f0 100%)',*/}
+    {/*  color: '#304424',*/}
+    {/*  padding: '6px 12px',*/}
+    {/*  borderRadius: '8px',*/}
+    {/*  fontWeight: 700,*/}
+    {/*  display: 'inline-block',*/}
+    {/*  boxShadow: '0 2px 8px rgba(255, 255, 255, 0.2)',*/}
+    {/*}}>Shady</span>*/}
+    {/*                  <span style={{ fontWeight: 300 }}>Shanab</span>*/}
+    {/*                </h5>*/}
+    {/*              </Link>*/}
+
+    {/*              /!* Dark theme logo *!/*/}
+    {/*              <Link className="logo-black" href="/">*/}
+    {/*                <h5 className="id-color" style={{*/}
+    {/*                  fontWeight: 700,*/}
+    {/*                  fontSize: '18px',*/}
+    {/*                  lineHeight: '1',*/}
+    {/*                  textAlign: 'left',*/}
+    {/*                  textTransform: 'none',*/}
+    {/*                  border: 'none',*/}
+    {/*                  padding: '0',*/}
+    {/*                  margin: '0',*/}
+    {/*                  letterSpacing: '0.5px',*/}
+    {/*                  color: '#333',*/}
+    {/*                  backgroundColor: 'transparent',*/}
+    {/*                  whiteSpace: 'nowrap',*/}
+    {/*                  display: 'inline-flex',*/}
+    {/*                  alignItems: 'center',*/}
+    {/*                  gap: '8px',*/}
+    {/*                }}>*/}
+    {/*<span style={{*/}
+    {/*  background: 'linear-gradient(135deg, #000 0%, #333 100%)',*/}
+    {/*  color: '#fff',*/}
+    {/*  padding: '6px 12px',*/}
+    {/*  borderRadius: '8px',*/}
+    {/*  fontWeight: 700,*/}
+    {/*  display: 'inline-block',*/}
+    {/*  boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',*/}
+    {/*}}>Shady</span>*/}
+    {/*                  <span style={{ fontWeight: 300 }}>Shanab</span>*/}
+    {/*                </h5>*/}
+    {/*              </Link>*/}
+
+
                 </div>
               </div>
               <div className="col-xl-6 col-lg-7 d-none d-lg-block">
-                <div className="main-menu">
-                  <nav className="tp-main-menu-content">
-                    <NavMenu />
-                  </nav>
-                </div>
+                {/*<div className="main-menu">*/}
+                {/*  <nav className="tp-main-menu-content">*/}
+                {/*    <NavMenu />*/}
+                {/*  </nav>*/}
+                {/*</div>*/}
               </div>
 
               <div className="col-xl-4 col-lg-3 col-md-7 col-6">
@@ -133,8 +196,8 @@ const HeaderOne = () => {
                     </label>
                   </div>
 
-                  <div className="tp-header-cv ml-10 d-none d-md-block">
-                    <a className="tp-header-cv-btn" href="assets/img/cv/mycv.docx">
+                  <div className="tp-header-cv ml-10">
+                    <a className="tp-header-cv-btn" href="assets/img/cv/Shady_Elsayed_CV.pdf">
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 8C1 11.866 4.13401 15 8 15C11.866 15 15 11.866 15 8" stroke="currentColor"
@@ -144,13 +207,13 @@ const HeaderOne = () => {
                       </svg>
                     </a>
                   </div>
-                  <div className="tp-header-hamburger ml-20">
-                    <button className="tp-hamburger-btn tp-hamburger-btn-white tp-menu-bar tp-offcanvas-open-btn-2"
-                      onClick={() => setShowCanvas(true)}
-                      type="button">
-                      <span></span>
-                    </button>
-                  </div>
+                  {/*<div className="tp-header-hamburger ml-20">*/}
+                  {/*  <button className="tp-hamburger-btn tp-hamburger-btn-white tp-menu-bar tp-offcanvas-open-btn-2"*/}
+                  {/*    onClick={() => setShowCanvas(true)}*/}
+                  {/*    type="button">*/}
+                  {/*    <span></span>*/}
+                  {/*  </button>*/}
+                  {/*</div>*/}
                 </div>
               </div>
 
@@ -162,27 +225,30 @@ const HeaderOne = () => {
 
       <header>
 
-        <div className="tp-header-area tp-header-mob-space tp-header-transparent p-relative tp-int-menu tp-header-sticky-cloned">
+        <div className="tp-header-area tp-header-mob-space tp-header-transparent p-relative tp-int-menu py-2 tp-header-sticky-cloned">
           <div className="container container-large">
             <div className="row align-items-center">
               <div className="col-xl-2 col-lg-2 col-md-5 col-6">
 
                 <div className="logo">
-                  <Link className="logo-white" href="/">
-                    <Image style={{ width: '115px', height: 'auto' }} src={light_logo} alt="diego-image" />
-                  </Link>
-                  <Link className="logo-black" href="/">
-                    <Image style={{ width: '115px', height: 'auto' }} src={dark_logo} alt="diego-image" />
-                  </Link>
+                    <Link className="logo-white" href="/">
+                        <Image style={{ width: '70px', height: 'auto' }} src={dark_logo} alt="logo" />
+                    </Link>
+                    <Link className="logo-black" href="/">
+                        <Image style={{ width: '70px', height: 'auto' }} src={light_logo} alt="logo" />
+                    </Link>
                 </div>
+
+
+
 
               </div>
               <div className="col-xl-6 col-lg-7 d-none d-lg-block">
-                <div className="main-menu">
-                  <nav className="tp-main-menu-content">
-                    <NavMenu />
-                  </nav>
-                </div>
+                {/*<div className="main-menu">*/}
+                {/*  <nav className="tp-main-menu-content">*/}
+                {/*    <NavMenu />*/}
+                {/*  </nav>*/}
+                {/*</div>*/}
               </div>
               <div className="col-xl-4 col-lg-3 col-md-7 col-6">
                 <div className="tp-header-right d-flex align-items-center justify-content-end">
@@ -233,8 +299,8 @@ const HeaderOne = () => {
 
                     </label>
                   </div>
-                  <div className="tp-header-cv ml-10 d-none d-md-block">
-                    <a className="tp-header-cv-btn" href="assets/img/cv/mycv.docx">
+                  <div className="tp-header-cv ml-10">
+                    <a className="tp-header-cv-btn" href="assets/img/cv/Shady_Elsayed_CV.pdf">
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 8C1 11.866 4.13401 15 8 15C11.866 15 15 11.866 15 8" stroke="currentColor"
@@ -244,14 +310,14 @@ const HeaderOne = () => {
                       </svg>
                     </a>
                   </div>
-                  <div className="tp-header-hamburger ml-20">
-                    <button
-                      onClick={() => setShowCanvas(true)}
-                      className="tp-hamburger-btn tp-hamburger-btn-white tp-menu-bar tp-offcanvas-open-btn-2"
-                      type="button">
-                      <span></span>
-                    </button>
-                  </div>
+                  {/*<div className="tp-header-hamburger ml-20">*/}
+                  {/*  <button*/}
+                  {/*    onClick={() => setShowCanvas(true)}*/}
+                  {/*    className="tp-hamburger-btn tp-hamburger-btn-white tp-menu-bar tp-offcanvas-open-btn-2"*/}
+                  {/*    type="button">*/}
+                  {/*    <span></span>*/}
+                  {/*  </button>*/}
+                  {/*</div>*/}
                 </div>
               </div>
             </div>

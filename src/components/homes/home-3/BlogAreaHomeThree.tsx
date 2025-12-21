@@ -1,7 +1,7 @@
 
- 
+
 import React from 'react';
-import Link from 'next/link'; 
+import Link from 'next/link';
 import DownArrowIcon from '@/svg/home-3/DownArrowIcon';
 import Image, { StaticImageData } from 'next/image';
 import blog_img_3_1 from "@/assets/img/blog/blog-3-1.jpg";
@@ -43,7 +43,7 @@ const blog_data: Datatype[] = [
 const BlogAreaHomeThree = () => {
   return (
     <>
-      <div className="tp-blog-3__area black-bg-3 pt-320 pb-50 fix">
+      <div className="tp-blog-3__area theme-bg-2 pt-320 pb-50 fix">
         <div className="container">
           <div className="tp-blog-3__title-wrap mb-60">
             <div className="row align-items-end">
@@ -54,7 +54,7 @@ const BlogAreaHomeThree = () => {
               </div>
               <div className="col-xl-6 col-lg-4 col-md-4">
                 <div className="tp-blog-3__btn text-start text-md-end">
-                  <Link className="tp-btn-blue" href="/blog">
+                  <Link className="tp-btn-black-lg" href="/blog">
                     <span className="text"> View All Post</span>
                     <span className="icon">
                       <DownArrowIcon />
@@ -70,7 +70,7 @@ const BlogAreaHomeThree = () => {
                 <div className="tp-blog-3__item mb-70">
                   <div className="tp-blog-3__content">
                     <h4 className="tp-blog-3__content-title">
-                      <Link href="/blog-details-2" dangerouslySetInnerHTML={{ __html: item.title }}></Link>
+                      <Link href="/blog-details" dangerouslySetInnerHTML={{ __html: item.title }}></Link>
                     </h4>
                     <div className="tp-blog-3__meta-box mb-30 d-flex align-items-center justify-content-between">
                       <div className="tp-blog-3__category">

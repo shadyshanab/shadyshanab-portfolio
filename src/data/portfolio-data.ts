@@ -1,0 +1,201 @@
+import {
+    cityStoresList, digitalSalesList, hrList, inventoryList, jewelryList,
+    kemetList, lyceeList, meetntrainDashboardList, meetntrainList, newsList,
+    pythonXList, rehailiList, standardErpList,
+    veilyaList, venuesDashboardList, venuesList
+} from "@/image-cloudinary-urls/projectsUrlsList";
+
+export const allProjects = {
+    "meetntrain": {
+        id: "meetntrain",
+        title: "MeetnTrain",
+        technology: "Next.js",
+        tag: "website",
+        date: "2024 - Present",
+        client: "MeetnTrain",
+        services: ["Front End Development", "UI/UX Design", "Social Platform"],
+        description: "MeetnTrain is a social platform that connects users with similar interests and facilitates event planning. Crafted intuitive user interfaces and seamless interactions for the platform, enabling users to explore events, connect with others, plan outings, purchase tickets, share memories, stay informed, engage with organizers, and host their events.",
+        images: meetntrainList,
+        liveLink: "https://meetntrain.com/community/lfgdubai"
+    },
+    "digital-sales": {
+        id: "digital-sales",
+        title: "Digital Sales",
+        technology: "Next.js",
+        tag: "website",
+        date: "2023",
+        client: "Digital Sales",
+        services: ["Landing Page", "Campaign Management", "Analytics", "Client Reporting"],
+        description: "Digital Sales is a comprehensive solution for managing digital marketing campaigns, providing features for campaign management, analytics, and client reporting. It allows agencies to easily manage their clients' digital marketing efforts and track performance, making it a valuable tool for digital marketing professionals.",
+        images: digitalSalesList,
+        liveLink: "http://digital-sales.vercel.app/"
+    },
+    "inventory-management-system": {
+        id: "inventory-management-system",
+        title: "Inventory Management System",
+        technology: "Next.js",
+        tag: "website",
+        date: "2023",
+        client: "Saad Group",
+        services: ["Product Management", "Purchase Management", "Sales Management", "Inventory Management", "Reports", "Dashboard"],
+        description: "Developed an Inventory Management System for NextERP. Implemented modules covering various aspects: Product Management, Purchase Management, Sales Management, Inventory Management, Reports, and Dashboard. Perfect solution for small enterprises to manage their inventory.",
+        images: inventoryList,
+        liveLink: "https://github.com/shadyshanabApps/Stock-Management"
+    },
+    "lycee-balzak-erp": {
+        id: "lycee-balzak-erp",
+        title: "Lycee Balzak ERP",
+        technology: "React",
+        tag: "website",
+        date: "2022",
+        client: "Lycée Balzac",
+        services: ["Accounting", "Student Management", "Transportation", "Admissions", "Reports"],
+        description: "Developed an efficient ERP system tailored for school management. Implemented modules for Accounting, Journals, Sales, Purchases, Stocks, Reports, Permissions, and Dashboard. Managed school inventory, expenses, and budgets. Streamlined transportation logistics, enhanced student affairs management, utilized data visualization charts for analysis, simplified student admission process, and created an intuitive dashboard for monitoring finances, attendance, transportation, and student performance.",
+        images: lyceeList,
+        liveLink: "http://www.school.erp.egycodes.com/"
+    },
+    "standard-erp": {
+        id: "standard-erp",
+        title: "Standard ERP",
+        technology: "React",
+        tag: "website",
+        date: "2023",
+        client: "Standard",
+        services: ["Accounting", "Sales", "Purchases", "Stocks", "Reports", "Permissions"],
+        description: "Developed a comprehensive ERP system customized for enterprise management. Implemented modules covering Accounting, Journals, Sales, Purchases, Stocks, Reports, and Permissions. Full Solution for Enterprise Management.",
+        images: standardErpList,
+        liveLink: "http://www.erp.egycodes.com/"
+    },
+    "hr": {
+        id: "hr",
+        title: "HR",
+        technology: "React",
+        tag: "website",
+        date: "2022",
+        client: "Standard",
+        services: ["Attendance", "Payroll", "Recruitment", "Performance Management", "Leave Management", "Expense Management"],
+        description: "Developed a comprehensive HR system. Implemented modules covering Attendance, Payroll, Recruitment, Performance Management, Time & Attendance, Leave, Expense, Document, Reports, and Dashboard. Full Solution for HR Management.",
+        images: hrList,
+        liveLink: "http://www.hr.egycodes.com/"
+    },
+    "jewelry": {
+        id: "jewelry",
+        title: "Jewelry",
+        technology: "React",
+        tag: "website",
+        date: "2022",
+        client: "Jewelry Store",
+        services: ["Purchase Management", "Serial Tracking", "Sales Management", "Inventory Management"],
+        description: "Developed a comprehensive Jewelry system for jewelry management. Implemented modules covering Purchase Management, Create and Keep Track of Items Serials, Sales Management, Inventory Management, Reports, and Dashboard. Full Solution for Jewelry Management.",
+        images: jewelryList,
+        liveLink: "http://jewelry.egycodes.com/"
+    },
+    "venues": {
+        id: "venues",
+        title: "Venues",
+        technology: "React",
+        tag: "website",
+        date: "2023",
+        client: "MeetnTrain",
+        services: ["Venue Discovery", "Booking System", "Event Management"],
+        description: "Venues is a website that provides information about venues in UAE, and allows users to book venues for events. It offers a comprehensive solution for venue management, including features for venue discovery, booking, and event management.",
+        images: venuesList,
+        liveLink: "https://venues.com/"
+    },
+    "meetntrain-dashboard": {
+        id: "meetntrain-dashboard",
+        title: "MeetnTrain Dashboard",
+        technology: "React",
+        tag: "website",
+        date: "2023",
+        client: "MeetnTrain",
+        services: ["Event Management", "Community Management", "Product Management", "Analytics"],
+        description: "MeetnTrain Dashboard is a comprehensive solution for managing events, providing features for event discovery, booking, and event management. It allows users to easily manage their events, communities, products, and memberships, as well as view invoices and access a powerful dashboard, making it a valuable tool for event planners.",
+        images: meetntrainDashboardList,
+        liveLink: "#"
+    },
+    "venues-dashboard": {
+        id: "venues-dashboard",
+        title: "Venues Dashboard",
+        technology: "React",
+        tag: "website",
+        date: "2023",
+        client: "MeetnTrain",
+        services: ["Venue Management", "Booking Management", "Event Management"],
+        description: "Venues Dashboard is a comprehensive solution for managing venues, providing features for venue discovery, booking, and event management. It allows users to easily manage their venues and events, making it a valuable tool for venue owners and event planners.",
+        images: venuesDashboardList,
+        liveLink: "#"
+    },
+    "pythonx": {
+        id: "pythonx",
+        title: "PythonX",
+        technology: "React",
+        tag: "website",
+        date: "2023",
+        client: "Pythonx",
+        services: ["Web Development", "Mobile App Development", "Tech Solutions"],
+        description: "Pythonx Tech Solutions is a sleek one-page website for Pythonx, a software company specializing in web and mobile app development. The site features sections including a captivating landing page, about us, mission, vision, and a contact form, showcasing Pythonx's expertise and commitment to cutting-edge technology.",
+        images: pythonXList,
+        liveLink: "https://pythonx.ae/"
+    },
+    "kemet": {
+        id: "kemet",
+        title: "Kemet",
+        technology: "React Native",
+        tag: "mobile app",
+        date: "2023",
+        client: "Kemet",
+        services: ["Mobile Development", "VR Technology", "Tourism Platform"],
+        description: "Kemet is a mobile app that lets users explore Egypt's most famous landmarks using immersive VR technology, similar to Google Cardboard. The app allows users to showcase top destinations across Egypt's governorates, search and filter places by tourism type, and discover the unique folklores and cultural highlights of each region.",
+        images: kemetList,
+        liveLink: "#"
+    },
+    "news-app": {
+        id: "news-app",
+        title: "News App",
+        technology: "React Native",
+        tag: "mobile app",
+        date: "2023",
+        client: "Nabgha Team",
+        services: ["Educational Content", "News Updates", "Student Resources"],
+        description: "Nabgha is a modern educational app designed for students to stay updated with the latest news in education, including exam templates, study resources, and important academic announcements. The app offers a user-friendly interface and timely updates to help students stay informed and prepared.",
+        images: newsList,
+        liveLink: "#"
+    },
+    "city-stores": {
+        id: "city-stores",
+        title: "City Stores",
+        technology: "React Native",
+        tag: "mobile app",
+        date: "2023",
+        client: "Graduation Project",
+        services: ["E-commerce", "Local Shopping", "Inventory Management"],
+        description: "Imagine Uber Eats for clothes! It's a mobile app that connects shoppers with nearby boutiques, making it easy to discover and buy trendy apparel from local stores. For stores, the user-friendly dashboard streamlines inventory uploads, helping them showcase their latest offerings to eager fashion enthusiasts.",
+        images: cityStoresList,
+        liveLink: "#"
+    },
+    "alrehaili": {
+        id: "alrehaili",
+        title: "Alrehaili",
+        technology: "WordPress",
+        tag: "website",
+        date: "2021",
+        client: "Sheikh Ibrahim Alrehaili",
+        services: ["Content Management", "WordPress Development", "Islamic Content"],
+        description: "Alrehaili is an Islamic website that provides blogs, articles, audios and videos about Islam for sheikh Ibrahim Alrehaili. Full Solution for Islamic Content.",
+        images: rehailiList,
+        liveLink: "https://al-rehaili.net/"
+    },
+    "veilya": {
+        id: "veilya",
+        title: "Veilya",
+        technology: "WordPress",
+        tag: "website",
+        date: "2021",
+        client: "Veilya",
+        services: ["E-commerce", "WooCommerce", "Online Store"],
+        description: "Veilya is an online store for hijabs and accessories. Full Solution for Online Store.",
+        images: veilyaList,
+        liveLink: "https://veilya.com/"
+    }
+};

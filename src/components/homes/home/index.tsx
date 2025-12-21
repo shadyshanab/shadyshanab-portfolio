@@ -10,8 +10,8 @@ import PortfolioAreaHomeOne from "./PortfolioAreaHomeOne";
 import SkillAreaHomeOne from "./SkillAreaHomeOne";
 import AwardAreaHomeOne from "./AwardAreaHomeOne";
 import TestimonialAreaHomeOne from "./TestimonialAreaHomeOne";
-import PriceAreaHomeOne from "./PriceAreaHomeOne";
 import FooterOne from "@/layouts/footers/FooterOne";
+import BlogAreaHomeThree from "@/components/homes/home-3/BlogAreaHomeThree";
 
 
 const HomeOne = () => {
@@ -34,7 +34,7 @@ const HomeOne = () => {
             <SkillAreaHomeOne />
             <AwardAreaHomeOne style_2={false} />
             <TestimonialAreaHomeOne />
-            <PriceAreaHomeOne />
+            <BlogAreaHomeThree/>
           </main>
           <FooterOne />
         </div>
