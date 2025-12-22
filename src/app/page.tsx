@@ -33,7 +33,7 @@ export const metadata = {
         siteName: 'Shady Shanab — Portfolio',
         images: [
             {
-                url: `${siteUrl}/assets/img/hero/profile-picture.png`,
+                url: `${siteUrl}/assets/img/logo/whitelogo.png`,
                 width: 1200,
                 height: 630,
                 alt: 'Shady Shanab — Web & App Developer'
