@@ -4,7 +4,7 @@ import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 import '@/assets/scss/main.scss';
 
-const siteUrl = process.env.SITE_URL || 'https://shadyshanab.tech';
+const siteUrl =  'https://shadyshanab.tech';
 
 export const metadata = {
     title: 'Shady Shanab — Web & App Developer | UX Designer',
@@ -33,7 +33,7 @@ export const metadata = {
         siteName: 'Shady Shanab — Portfolio',
         images: [
             {
-                url: `/assets/img/hero/profile-picture.png`,
+                url: `${siteUrl}/assets/img/hero/profile-picture.png`,
                 width: 1200,
                 height: 630,
                 alt: 'Shady Shanab — Web & App Developer'

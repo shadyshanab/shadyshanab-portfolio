@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
     const image =
         Array.isArray(project.images) && project.images.length > 0
             ? project.images[0]
-            : `/assets/img/hero/profile-picture.png`;
+            : `${siteUrl}/assets/img/hero/profile-picture.png`;
 
     return {
         title,
