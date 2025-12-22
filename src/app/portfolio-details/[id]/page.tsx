@@ -4,7 +4,7 @@ import HeaderOne from '@/layouts/headers/HeaderOne';
 import { allProjects } from '@/data/portfolio-data';
 import PortfolioDetailsThree from '@/components/portfolio-details-3';
 
-const siteUrl = process.env.SITE_URL || 'https://shadyshanab.dev';
+const siteUrl =  'https://shadyshanab.tech';
 
 export async function generateStaticParams() {
     return Object.keys(allProjects).map((id) => ({ id }));
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
     const image =
         Array.isArray(project.images) && project.images.length > 0
             ? project.images[0]
-            : `${siteUrl}/assets/img/hero/profile-picture.png`;
+            : `/assets/img/hero/profile-picture.png`;
 
     return {
         title,

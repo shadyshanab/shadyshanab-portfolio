@@ -3,7 +3,7 @@ import Contact from '@/components/contact';
 import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 
-const siteUrl = process.env.SITE_URL || 'https://shadyshanab.dev';
+const siteUrl = process.env.SITE_URL || 'https://shadyshanab.tech';
 
 export const metadata = {
     title: 'Contact — Shady Shanab',

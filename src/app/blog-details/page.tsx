@@ -3,7 +3,7 @@ import BlogDetailsTwo from '@/components/blog-details-2';
 import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 
-const siteUrl = process.env.SITE_URL || 'https://shadyshanab.dev';
+const siteUrl =  'https://shadyshanab.tech';
 
 export const metadata = {
     title: 'Blog Details — Shady Shanab',

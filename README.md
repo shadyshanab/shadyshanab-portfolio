@@ -2,7 +2,7 @@
 
 Personal portfolio for showcasing web and mobile projects, case studies, and contact. Built with Next.js (App Router), TypeScript, and SCSS with smooth animations and SEO‑ready metadata.
 
-- Live: https://shadyshanab.dev
+- Live: https://shadyshanab.tech
 - Portfolio: `/portfolio-details/[id]`
 - Blog: `/blog`
 - Contact: `/contact`

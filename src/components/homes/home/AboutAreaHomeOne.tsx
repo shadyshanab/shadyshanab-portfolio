@@ -19,29 +19,31 @@ type DataType = {
 }
 
 
+// src/components/homes/home/AboutAreaHomeOne.tsx
 const about_content: DataType = {
   subtitle: "About Me",
-  award_title: "Independent Of The Year",
-  award_des: "Annual Awards 2020 • awwwards.com",
-  about_des: <>Hello! I'm <span>Diego</span> a self-taught & award-winning <span>Digital Designer & Developer</span> with over <span>fifteen  years of work experience</span>. I started in my children's room and got pro at renowned digital<span> nexum AG</span> agencies.</>,
+  award_title: "Frontend Engineer",
+  award_des: "Next.js • React • React Native • TypeScript",
+  about_des: <>Hello! I'm <span>Shady Shanab</span>, a <span>Frontend Engineer Web & Mobile Developer</span> specializing in <span>Next.js, React, and React Native</span>. I build fast, accessible products—from social platforms and dashboards to ERP systems and e‑commerce—focused on clean UI/UX, performance, and measurable outcomes.</>,
   counter_data: [
     {
       id: 1,
-      count: 180,
-      text: "Project Delivered",
+      count: 15,
+      text: "Projects Delivered",
     },
     {
       id: 2,
-      count: 13,
+      count: 4,
       text: "Years of Experience",
     },
     {
       id: 3,
-      count: 40,
+      count: 12,
       text: "Happy Clients",
     }
   ],
 }
+
 
 const { subtitle, award_title, award_des, about_des, counter_data } = about_content
 
