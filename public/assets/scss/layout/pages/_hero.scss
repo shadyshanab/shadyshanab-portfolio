@@ -85,7 +85,9 @@
             font-size: 75px;
         }
         @media #{$xs}{
-            font-size: 50px;
+            font-size: 40px;
+            word-break: break-word;
+            line-height: 1.25;
         }
         & span,
         & span b{

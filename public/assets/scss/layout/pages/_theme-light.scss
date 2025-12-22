@@ -262,7 +262,7 @@ html[tp-theme='tp-theme-light']{
         color: rgba(39, 40, 44, 0.60);
     }
     & .tp-about-award-icon span img {
-        @include black-invert; 
+        @include black-invert;
     }
     & .tp-about-inner-border {
         background-color: var(--tp-common-black-5);
@@ -502,7 +502,7 @@ html[tp-theme='tp-theme-light']{
         background-image: -webkit-linear-gradient(91deg, #C0E42B 8.59%, #F59571 86.19%);
         background-image: -moz-linear-gradient(91deg, #C0E42B 8.59%, #F59571 86.19%);
         background-image: -ms-linear-gradient(91deg, #C0E42B 8.59%, #F59571 86.19%);
-        background-image: -o-linear-gradient(91deg, #C0E42B 8.59%, #F59571 86.19%); 
+        background-image: -o-linear-gradient(91deg, #C0E42B 8.59%, #F59571 86.19%);
         background-image: linear-gradient(91deg, #C0E42B 8.59%, #F59571 86.19%);
     }
     & .tp-about-fact-item h4 {
@@ -551,7 +551,7 @@ html[tp-theme='tp-theme-light']{
     & .stroke-text{
         & img{
             @include black-invert;
-            opacity: .6; 
+            opacity: .6;
         }
     }
     & .tp-hero-title-2 .location-text {
@@ -625,12 +625,12 @@ html[tp-theme='tp-theme-light']{
     & .tp-hero-2__exp-brand {
         border: 1px solid #EDEDED;
         & img{
-            @include black-invert; 
+            @include black-invert;
             transition: .3s;
         }
         &:hover{
             & img{
-                @include white-invert; 
+                @include white-invert;
             }
         }
     }
@@ -647,7 +647,7 @@ html[tp-theme='tp-theme-light']{
     .tp-hero-2__service-accordion .accordion-header button {
         color: #DBDBE5;
         & span{
-            color: #DBDBE5; 
+            color: #DBDBE5;
         }
     }
     & .tp-hero-2__service-title {
@@ -709,7 +709,7 @@ html[tp-theme='tp-theme-light']{
         color: #8E8E95;
     }
     & .tp-testimonial-2__shape-img {
-        @include black-invert; 
+        @include black-invert;
     }
     & .tp-testimonial-2__slider-text p {
         color: #5B5B5C;
@@ -724,7 +724,7 @@ html[tp-theme='tp-theme-light']{
         border-right: 1px solid #F0F0F3;
     }
     .tp-testimonial-2__star-shape {
-        @include black-invert; 
+        @include black-invert;
     }
     & .tp-testimonial-2__arrow-box button span {
         color: var(--tp-common-black-5);
@@ -747,10 +747,10 @@ html[tp-theme='tp-theme-light']{
         color: var(--tp-common-black-5);
     }
     & .tp-hero-2__circle-wrapper.contact-section .contact-shape-1 {
-        @include black-invert; 
+        @include black-invert;
     }
     & .tp-hero-2__circle-wrapper.contact-section .contact-shape-2 {
-        @include black-invert; 
+        @include black-invert;
     }
     & .tp-contact-2__input input,
       .tp-contact-2__textarea textarea{
@@ -798,14 +798,14 @@ html[tp-theme='tp-theme-light']{
         color: #45495A;
     }
     & .tp-hero-3__shape-1 {
-        @include black-invert; 
+        @include black-invert;
         mix-blend-mode: color-burn;
         & img{
             opacity: 0.5;
         }
     }
     .tp-hero-3__shape-2 {
-        @include black-invert; 
+        @include black-invert;
         mix-blend-mode: color-burn;
         & img{
             opacity: 0.5;
@@ -835,7 +835,7 @@ html[tp-theme='tp-theme-light']{
         }
     }
     & .tp-service-3__circle-img .text-img img {
-        @include black-invert; 
+        @include black-invert;
     }
     .tp-service-3__circle-img .shape {
         & svg{
@@ -850,7 +850,7 @@ html[tp-theme='tp-theme-light']{
         color: var(--tp-common-black-5);
     }
     & .tp-hero-3__scrool-down span svg {
-        @include black-invert; 
+        @include black-invert;
     }
     & .tp-hero-3__social-wrap a {
         color: var(--tp-common-black-5);
@@ -865,7 +865,7 @@ html[tp-theme='tp-theme-light']{
         }
     }
     & .tp-blog-3__area{
-        background-color: #F6F9FF; 
+        background-color: #F6F9FF;
         & .tp-section-title-3 {
             color: var(--tp-common-black-5);
         }
@@ -905,10 +905,10 @@ html[tp-theme='tp-theme-light']{
         border: 10px solid #F6F9FF;
     }
     & .ab-hero__circle img {
-        @include black-invert; 
+        @include black-invert;
     }
     & .ab-hero__shape-1 {
-        @include black-invert; 
+        @include black-invert;
         mix-blend-mode: color-burn;
         & img{
             opacity: 0.5;
@@ -1479,7 +1479,7 @@ html[tp-theme='tp-theme-light']{
         color: var(--tp-common-black-5);
     }
     & .postbox-details__qoute-icon {
-        @include black-invert; 
+        @include black-invert;
     }
     & .postbox-details__qoute {
         border-left: 4px solid var(--tp-common-black-5);
@@ -1624,12 +1624,20 @@ html[tp-theme='tp-theme-light']{
         color: var(--tp-common-black-5);
     }
     & .contact-inner__shape-1 {
-        @include black-invert; 
+        @include black-invert;
     }
     & .contact-inner__mail-info span {
         color: rgba(2, 11, 24, 0.40);
     }
-    & .contact-inner__mail-text p {
+
+    .email-font{
+        font-size: 36px;
+        @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+            font-size: 25px;
+        }
+    }
+
+        & .contact-inner__mail-text p {
         color: #56585F;
     }
     & .contact-inner__category-title {
@@ -1696,7 +1704,7 @@ html[tp-theme='tp-theme-light']{
 
     & .tp-offcanvas-area-2 {
         border: 1px solid #515760;
-        background-color: var(--tp-common-white);       
+        background-color: var(--tp-common-white);
     }
     & .tp-offcanvas-circle-1 span {
         display: none;
@@ -1796,7 +1804,7 @@ html[tp-theme='tp-theme-light']{
     }
     & .postbox-details___related-title-sm a {
         background-image: -webkit-radial-gradient(#000, #000), -webkit-radial-gradient(#000, #000);
-        background-image: -moz-radial-gradient(#000, #000), -moz-radial-gradient(#000, #000); 
+        background-image: -moz-radial-gradient(#000, #000), -moz-radial-gradient(#000, #000);
         background-image: -ms-radial-gradient(#000, #000), -ms-radial-gradient(#000, #000);
         background-image: -o-radial-gradient(#000, #000), -o-radial-gradient(#000, #000);
         background-image: radial-gradient(#000, #000), radial-gradient(#000, #000);

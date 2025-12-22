@@ -12445,6 +12445,7 @@ html[tp-theme=tp-theme-light] .cursor-white #ball {
 @media (max-width: 767px) {
   .tp-hero-title {
     font-size: 40px;
+    line-height: 1.25;
   }
 }
 .tp-hero-title span, .tp-hero-title span b {
@@ -18128,7 +18129,6 @@ html[tp-theme=tp-theme-light] .cursor-white #ball {
 }
 .contact-inner__mail-info a {
   font-weight: 500;
-  font-size: 36px;
   line-height: 18px;
   background: linear-gradient(90deg, #A248ED 0%, #FF5075 44.98%, #FFA14D 97.77%);
   -webkit-background-clip: text;
@@ -18138,6 +18138,7 @@ html[tp-theme=tp-theme-light] .cursor-white #ball {
   font-family: var(--tp-ff-didoneright);
   position: relative;
 }
+
 .contact-inner__mail-info a::after {
   position: absolute;
   bottom: 0;
