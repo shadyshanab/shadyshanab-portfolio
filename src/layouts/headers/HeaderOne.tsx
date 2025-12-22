@@ -2,7 +2,6 @@
 import { gsap } from 'gsap';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import Offcanvas2 from '@/components/common/Offcanvas2';
 import UseThemeCheck from '@/hooks/UseThemeCheck';
 import light_logo from "@/assets/img/logo/whitelogo.png";
 import dark_logo from "@/assets/img/logo/darklogo.png";
@@ -326,7 +325,6 @@ const HeaderOne = () => {
 
       </header>
 
-      <Offcanvas2 showCanvas={showCanvas} setShowCanvas={setShowCanvas} />
 
     </>
   );
