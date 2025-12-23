@@ -3,6 +3,7 @@ import HomeOne from '@/components/homes/home';
 import Wrapper from '@/layouts/Wrapper';
 import React from 'react';
 import '@/assets/scss/main.scss';
+import { Analytics } from "@vercel/analytics/next"
 
 const siteUrl =  'https://shadyshanab.tech';
 
@@ -99,6 +100,7 @@ const MainHome = () => {
     return (
         <Wrapper>
             <HomeOne />
+            <Analytics />
             <script
                 type="application/ld+json"
                 // JSON-LD as string for SEO crawlers
