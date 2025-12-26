@@ -11,24 +11,25 @@ export const size = {
 export const contentType = 'image/png'
 
 // Image generation
-export default function Icon() {
+export default async function Icon() {
+  // Load the image from the public directory
+  const imageData = await fetch(new URL('../../public/assets/img/logo/darklogo.png', import.meta.url)).then(
+    (res) => res.arrayBuffer()
+  )
+
   return new ImageResponse(
     (
       // ImageResponse JSX element
       <div
         style={{
-          fontSize: 24,
-          background: 'black',
-          width: '100%',
-          height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          color: 'white',
-          borderRadius: '50%',
+          width: '100%',
+          height: '100%',
         }}
       >
-        S
+        <img src={imageData as any} alt="S" width="32" height="32" />
       </div>
     ),
     // ImageResponse options
