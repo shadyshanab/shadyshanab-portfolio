@@ -67,7 +67,10 @@ export const metadata = {
         canonical: siteUrl
     },
     icons: {
-        icon: '/favicon.ico',
+        icon: [
+            { url: '/favicon.ico' },
+            { url: '/assets/img/hero/profile-picture.jpg', type: 'image/jpg' }
+        ],
         apple: '/apple-touch-icon.png'
     },
     themeColor: '#0f172a'
