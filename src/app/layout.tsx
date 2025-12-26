@@ -4,10 +4,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://shadyshanab.tech'),
- // manifest: '/manifest.json',
+  manifest: '/manifest.json',
   themeColor: '#0f172a',
 };
-
 
 export default function RootLayout({
   children,
