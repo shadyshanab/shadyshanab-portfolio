@@ -12,6 +12,7 @@ export const metadata: Metadata = {
       { url: '/assets/img/logo/darklogo.png' },
     ],
   },
+  manifest: '/manifest.json',
   themeColor: '#0f172a',
 };
 
