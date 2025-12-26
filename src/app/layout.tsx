@@ -4,17 +4,19 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://shadyshanab.tech'),
-  manifest: '/manifest.json',
+ // manifest: '/manifest.json',
   themeColor: '#0f172a',
   icons: {
     icon: [
-      { url: '/icon.png', sizes: '16x16', type: 'image/png' },
-      { url: '/icon.png', sizes: '32x32', type: 'image/png' },
-      // { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon-32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
     ],
-    apple: [{ url: '/icon.png', sizes: '180x180', type: 'image/png' }],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+    shortcut: '/favicon.ico',
   },
 };
+
 
 export default function RootLayout({
   children,
