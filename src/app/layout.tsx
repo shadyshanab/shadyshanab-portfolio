@@ -4,10 +4,6 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://shadyshanab.tech'),
-  icons: {
-    icon: '/icon',
-    apple: '/apple-icon',
-  },
   manifest: '/manifest.json',
   themeColor: '#0f172a',
 };
