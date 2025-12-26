@@ -1,5 +1,19 @@
 import "../styles/index.scss";
 import ThemeProvider from "@/components/provider/ThemeProvider";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/assets/img/logo/darklogo.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/assets/img/logo/darklogo.png' },
+    ],
+  },
+  themeColor: '#0f172a',
+};
 
 export default function RootLayout({
   children,

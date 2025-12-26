@@ -66,14 +66,6 @@ export const metadata = {
     alternates: {
         canonical: siteUrl
     },
-    icons: {
-        icon: [
-            { url: '/favicon.ico' },
-            { url: '/assets/img/logo/darklogo.png', type: 'image/png' },
-        ],
-        apple: '/apple-touch-icon.png'
-    },
-    themeColor: '#0f172a'
 };
 
 const jsonLd = {
