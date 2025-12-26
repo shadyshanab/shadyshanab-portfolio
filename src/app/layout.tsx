@@ -4,15 +4,6 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://shadyshanab.tech'),
-  icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/icon.png', type: 'image/png', sizes: '32x32' },
-    ],
-    apple: [
-      { url: '/apple-icon.png' },
-    ],
-  },
   manifest: '/manifest.json',
   themeColor: '#0f172a',
 };
