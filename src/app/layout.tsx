@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://shadyshanab.tech'),
   icons: {
     icon: [
-      { url: '/icon.png', sizes: 'any' },
-      { url: '/assets/img/logo/darklogo.png', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.png', type: 'image/png', sizes: '32x32' },
     ],
     apple: [
-      { url: '/assets/img/logo/darklogo.png' },
+      { url: '/apple-icon.png' },
     ],
   },
   manifest: '/manifest.json',
