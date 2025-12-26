@@ -3,9 +3,10 @@ import ThemeProvider from "@/components/provider/ThemeProvider";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://shadyshanab.tech'),
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.png', sizes: 'any' },
       { url: '/assets/img/logo/darklogo.png', type: 'image/png' },
     ],
     apple: [

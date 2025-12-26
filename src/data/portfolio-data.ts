@@ -140,7 +140,7 @@ export const allProjects = {
     },
     "kemet": {
         id: "kemet",
-        title: "Kemet",
+        title: "Kemet VR",
         technology: "React Native",
         tag: "mobile app",
         date: "2023",
