@@ -34,7 +34,7 @@ const footer_content: DataType = {
       name: "Linkedin",
       user_name: "@shady_elsayed",
       icon: <Linkedin width={'20'} height={'20'}/>,
-      link: "https://www.linkedin.com/in/shady-elsayed-software-developer/"
+      link: "https://www.linkedin.com/in/shadyshanab/"
     },
     {
       id: 2,

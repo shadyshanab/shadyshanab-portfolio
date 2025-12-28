@@ -15,7 +15,7 @@ interface HeroDataType {
 const hero_social_data: HeroDataType[] = [
   {
     id: 1,
-    link: "https://www.linkedin.com/in/shady-elsayed-software-developer/",
+    link: "https://www.linkedin.com/in/shadyshanab/",
     icon: <Linkedin />,
   },
   {

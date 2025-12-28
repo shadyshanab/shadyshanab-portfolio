@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/next"
 const siteUrl =  'https://shadyshanab.tech';
 
 export const metadata = {
-    title: 'Shady Shanab — Web & App Developer | UX Designer',
+    title: 'Shady Shanab — Web & Mobile App Developer | Crafting Seamless Digital Solutions',
     description:
         'Shady Shanab — Professional Web, Mobile, and UX developer. Specializes in Next.js, React and React Native. Portfolio, case studies and contact for hire.',
     keywords: [
@@ -27,7 +27,7 @@ export const metadata = {
     ],
     authors: [{ name: 'Shady Shanab', url: siteUrl }],
     openGraph: {
-        title: 'Shady Shanab — Web & App Developer | UX Designer',
+        title: 'Shady Shanab — Web & Mobile App Developer | Crafting Seamless Digital Solutions',
         description:
             'Shady Shanab — Professional Web, Mobile, and UX developer. Specializes in Next.js, React and React Native. View portfolio and hire for web/app projects.',
         url: siteUrl,

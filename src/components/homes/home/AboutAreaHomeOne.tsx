@@ -28,7 +28,7 @@ const about_content: DataType = {
   counter_data: [
     {
       id: 1,
-      count: 15,
+      count: 17,
       text: "Projects Delivered",
     },
     {
@@ -38,7 +38,7 @@ const about_content: DataType = {
     },
     {
       id: 3,
-      count: 12,
+      count: 15,
       text: "Happy Clients",
     }
   ],

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-import contact_img from "@/assets/img/contact/contact.jpg";
+import contact_img from "@/assets/img/contact/img.png";
 import contact_flower_img_1 from "@/assets/img/contact/contact-flower.png";
 import contact_flower_img_2 from "@/assets/img/contact/contact-flower-text.png";
 import ContactForm from '../forms/ContactForm';
