@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import award_img from "@/assets/img/about/award-icon.svg";
-import HeroImage from '@/assets/img/hero/profile-picture.png';
+import HeroImage from '@/assets/img/hero/profile-pic.png';
 import Count from '@/components/common/Count';
 
 
@@ -66,7 +66,7 @@ const AboutAreaHomeOne = () => {
                       <div className="tp-about-thumb-bg-shape include-bg"
                            style={{ backgroundImage: 'url(/assets/img/about/shape/about-shape-1.png)' }}>
                       </div>
-                      <Image src={HeroImage} alt="image" style={{width: "250px", height: "250px"}}/>
+                      <Image src={HeroImage} alt="image" style={{width: "260px", height: "350px"}}/>
                     </div>
                   </div>
                 </div>
