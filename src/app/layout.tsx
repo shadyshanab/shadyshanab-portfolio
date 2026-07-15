@@ -1,6 +1,7 @@
 import "../styles/index.scss";
 import ThemeProvider from "@/components/provider/ThemeProvider";
 import { Metadata } from "next";
+import React from "react";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://shadyshanab.tech'),
